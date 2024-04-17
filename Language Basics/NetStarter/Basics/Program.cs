@@ -56,10 +56,16 @@ var p = rec1.GetPerimeter();
 
 //  
 
- var fileio = new FileIO();
- fileio.CreateFile();
+//  var fileio = new FileIO();
+//  fileio.CreateFile();
 
- fileio.CreateFileWithInFolder();
+//  fileio.CreateFileWithInFolder();
+
+
+string filePath = @"D:\SDKandC-Language\Language Basics\NetStarter\Basics\People Management\People.csv";
+CSVParser cSVParser = new CSVParser();
+cSVParser.Parser(filePath);
+cSVParser.PrintNames();
 
 
 
