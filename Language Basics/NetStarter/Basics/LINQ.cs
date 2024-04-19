@@ -24,7 +24,8 @@ foreach(var age in ages)
     var odds = ages.Where(x => x % 2 == 1);
 
     //find cube of all even numbers within ages collection.
-    var cubesofEvenNumber = ages.Select(age => age * age);
+    var cubesofEvenNumber = ages.Where(age => age % 2 ==0 );
+    var evennumber = ages.Select(age => age * age *age);
     
 }
 
