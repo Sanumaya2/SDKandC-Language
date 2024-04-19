@@ -7,6 +7,7 @@
 // Student s5 = new();
 // Student s6 = new();
 
+
 // s1.name = "karan";
 // s1.address = "ktm";
 // s1.roll = 23;
@@ -31,10 +32,10 @@
 // a2.weight = 20;
 // a2.sound = "Meow";
 // Console.WriteLine($"Name:{a2.name}  Color:{a2.color}  Age:{a2.age}  Weight:{a2.weight}  Sound:{a2.sound}");
-using System;
-using Inheritance;
-var rec1 = new Rectangle( 5.6 , 3.4);
-var p = rec1.GetPerimeter();
+// using System;
+// using Inheritance;
+// var rec1 = new Rectangle( 5.6 , 3.4);
+// var p = rec1.GetPerimeter();
 
 // var rec2 = new Rectangle( 5.6 , 3.4);
 // var a = rec1.GetArea();
@@ -62,10 +63,13 @@ var p = rec1.GetPerimeter();
 //  fileio.CreateFileWithInFolder();
 
 
-string filePath = @"D:\SDKandC-Language\Language Basics\NetStarter\Basics\People Management\People.csv";
-CSVParser cSVParser = new CSVParser();
-cSVParser.Parser(filePath);
-cSVParser.PrintNames();
+// string filePath = @"D:\SDKandC-Language\Language Basics\NetStarter\Basics\People Management\People.csv";
+// CSVParser cSVParser = new CSVParser();
+// cSVParser.Parser(filePath);
+// cSVParser.PrintNames();
+
+// Student.PrintStudentType();
+
 
 
 
