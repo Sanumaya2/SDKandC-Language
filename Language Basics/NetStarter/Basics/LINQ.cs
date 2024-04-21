@@ -7,7 +7,7 @@ using System.Security.AccessControl;
 
 class LINQ
 {
-    int[] ages = [12, 45, 78, 89];
+    int[] ages = [12, 45, 78, 89, 78];
      List<Student> students = [
         new Student() { name = "Ram", address = "Ktm"},
         new Student() { name = "Laxman", address = "Dang"},
