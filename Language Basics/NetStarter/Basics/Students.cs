@@ -1,5 +1,5 @@
 // using System.Runtime.CompilerServices;
-
+using System;
 class Student
 {
     public static string studentType = "Tech";
