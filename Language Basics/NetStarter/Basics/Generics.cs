@@ -21,6 +21,6 @@ public class Generics
         Print<decimal>(3456.67m);
               
         List<int> marks = new List<int> {67,45,89,23};
-        marks.Add(87);      
+        marks.Add(57);      
     }
 }
