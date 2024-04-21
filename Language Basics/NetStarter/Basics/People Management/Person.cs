@@ -13,6 +13,4 @@ public class Person
     public string DateofBirth {get; set;}
     public string JobTitle {get; set;}
    
-    
-
 }

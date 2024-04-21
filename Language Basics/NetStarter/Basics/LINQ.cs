@@ -3,11 +3,12 @@
 //Imperative [Procedural , oop etc] (C, C++, C#) 
 //Declarative
 using System.Security.AccessControl;
+ 
 
 class LINQ
 {
     int[] ages = [12, 45, 78, 89];
-    List<Student> students = [
+     List<Student> students = [
         new Student() { name = "Ram", address = "Ktm"},
         new Student() { name = "Laxman", address = "Dang"},
         new Student() { name = "Bikendra", address = "Ktm"},
@@ -35,7 +36,7 @@ public void LearnLinq()
 
        // find student who lives in dang and sort the result by names.
        
-       var Dang = students.Where(students => students.address == "Dang") .OrderBy(students => students.Name);
+       var Dang = students.Where(students => students.address == "Dang") .OrderBy(students => students.name);
 
     }
 

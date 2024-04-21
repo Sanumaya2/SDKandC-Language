@@ -1,4 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
+// using System;
+// using Inheritance;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 //top level statement
 // Student s1 = new();
 // Student s2 = new();
@@ -16,6 +21,8 @@
 // Console.WriteLine($"{s1.name}  {s1.address}  {s1.roll}  {s1.dob}");
 // s1.PrintDetails();
 
+
+//Create Animal class
 // Animal a1 = new();
 // Animal a2 = new();
 
@@ -32,8 +39,8 @@
 // a2.weight = 20;
 // a2.sound = "Meow";
 // Console.WriteLine($"Name:{a2.name}  Color:{a2.color}  Age:{a2.age}  Weight:{a2.weight}  Sound:{a2.sound}");
-// using System;
-// using Inheritance;
+
+//Create rectangle class
 // var rec1 = new Rectangle( 5.6 , 3.4);
 // var p = rec1.GetPerimeter();
 
@@ -43,32 +50,48 @@
 // Console.WriteLine("Rectangle 1 - Perimeter:" + p);
 // Console.WriteLine("Rectangle 2 - Area:" + a);
 
+//Create square class
 // var square1 = new Square(23.5);
 // var b = square1.GetArea();
 // var h = square1.GetPerimeter();
 // Console.WriteLine("Square 1 - Perimeter:" + h);
 // Console.WriteLine("Square 2 - Area:" + b);
 
+//create circle class
 // var cir1 = new Circle(12.5);
 // var c = cir1.GetArea();
 // var d = cir1.GetPerimeter();
 // Console.WriteLine("Circle 1- Perimeter:" + d);
 // Console.WriteLine("Circle 2 - Area:" + c);
 
-//  
-
+//filefolderhandling
 //  var fileio = new FileIO();
 //  fileio.CreateFile();
 
 //  fileio.CreateFileWithInFolder();
 
-
+//People Management
 // string filePath = @"D:\SDKandC-Language\Language Basics\NetStarter\Basics\People Management\People.csv";
 // CSVParser cSVParser = new CSVParser();
 // cSVParser.Parser(filePath);
 // cSVParser.PrintNames();
 
+//Student.cs
 // Student.PrintStudentType();
+
+//linq
+// LINQ linq = new LINQ();
+// linq.LearnLinq();
+
+
+// parallel and async programming
+ ParallelAsync parallelAsync = new ParallelAsync();
+ parallelAsync.ProcessNumbers();
+
+// await parallelAsync.IgniteStove();
+// await parallelAsync.GrindMasala();
+// await parallelAsync.PutkeatleyOnWithWater();
+// await parallelAsync.IgniteStove();
 
 
 
