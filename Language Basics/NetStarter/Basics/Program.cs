@@ -72,10 +72,9 @@ using System.Threading.Tasks;
 
 //People Management
 // string filePath = @"D:\SDKandC-Language\Language Basics\NetStarter\Basics\People Management\People.csv";
-// CSVParser cSVParser = new CSVParser();
-// cSVParser.Parser(filePath);
-// cSVParser.PrintNames();
-
+// CSVParser parser = new();
+// parser.Parse();
+//  parser.PrintNames();
 //Student.cs
 // Student.PrintStudentType();
 
@@ -85,8 +84,8 @@ using System.Threading.Tasks;
 
 
 // parallel and async programming
- ParallelAsync parallelAsync = new ParallelAsync();
- parallelAsync.ProcessNumbers();
+//  ParallelAsync parallelAsync = new ParallelAsync();
+//  parallelAsync.ProcessNumbers();
 
 // await parallelAsync.IgniteStove();
 // await parallelAsync.GrindMasala();

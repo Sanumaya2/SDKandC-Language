@@ -1,46 +1,43 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-public class CSVParser
+using System.Xml.Schema;
+class CSVParser
 {
-    private List<Person> people;
-    public CSVParser()
+     List<Person> people = [];
+    public void Parse()
     {
-        people = new List<Person>();
+     // read file
+     string filePath = @"D:\SDKandC-Language\Language Basics\NetStarter\Basics\People Management\People.csv";
+     var lines = File.ReadAllLines(filePath);
+     //parsing
+     foreach(var line in lines.Skip(1))
+     {
+        var parts = line.Split(",", StringSplitOptions.RemoveEmptyEntries);
+        var person = new Person
+        {
+            index = int.Parse(parts[0]),
+            userId = parts[1],
+            firstName = parts[2],
+            lastName = parts[3],
+            sex = Enum.Parse<Gender>(parts[4]),
+             email = parts[5],
+             phone = parts[6],
+             dob = DateTime.Parse(parts[7]),
+             jobTitle = parts[8]
+
+
+        };
+        people.Add(person);
+     }
 
     }
-    public void Parser(string filePath)
+
+   public void PrintNames()
+   {
+    foreach(var person in people)
     {
-        using (StreamReader reader = new StreamReader(filePath))
-        {
-            while(!reader.EndOfStream)
-            {
-                string line = reader.ReadLine();
-                if (!string.IsNullOrEmpty(line))
-                {
-                    string[] parts = line.Split(',');
-                    if (parts.Length >=3)
-                    {
-                        Person person = new Person
-                        {
-                            Index = parts[0],
-                            FirstName = parts[2],
-                            LastName = parts[3]
-                            
-                        };
-                        people.Add(person);
-                    }
-                }
-            }
-        }
+        Console.WriteLine($"{person.firstName} {person.lastName}");
     }
-    public void PrintNames()
-    {
-        foreach (var person in people)
-        {
-            Console.WriteLine($"{person.Index}  {person.FirstName} {person.LastName}");
-           
-            
-        }
-    }
+   }
 }
