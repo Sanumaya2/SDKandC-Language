@@ -1,9 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // using System;
 // using Inheritance;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
+// using System;
+// using System.Threading;
+// using System.Threading.Tasks;
 //top level statement
 // Student s1 = new();
 // Student s2 = new();
@@ -84,8 +84,8 @@ using System.Threading.Tasks;
 
 
 // parallel and async programming
-//  ParallelAsync parallelAsync = new ParallelAsync();
-//  parallelAsync.ProcessNumbers();
+ ParallelAsync parallelAsync = new ParallelAsync();
+ parallelAsync.ProcessNumbers();
 
 // await parallelAsync.IgniteStove();
 // await parallelAsync.GrindMasala();
