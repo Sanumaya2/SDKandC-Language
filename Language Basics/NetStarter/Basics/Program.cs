@@ -84,13 +84,46 @@
 
 
 // parallel and async programming
- ParallelAsync parallelAsync = new ParallelAsync();
- parallelAsync.ProcessNumbers();
+//  ParallelAsync parallelAsync = new ParallelAsync();
+//  parallelAsync.ProcessNumbers();
 
 // await parallelAsync.IgniteStove();
 // await parallelAsync.GrindMasala();
 // await parallelAsync.PutkeatleyOnWithWater();
 // await parallelAsync.IgniteStove();
+
+//collegedb
+// using System.Net.Sockets;
+// using System.Reflection.Metadata.Ecma335;
+// using System.Security.AccessControl;
+using NetStarter.Basics.DataAccess;
+
+BasicDbContext Db = new();
+
+var teacher1 = new Teacher
+{
+    Name = "Laxman",
+    Address = "Dang",
+    Gender = 'M',
+    Qualification ="Graduate",
+    dob = new DateTime(2000 ,  1, 3)
+
+};
+
+Db.Teachers.Add(teacher1);
+Db.SaveChanges();  //commit change
+
+// var teachers = Db.Teachers.ToList();  //select * from teacher
+
+//list all female teachers from dang
+var teachers = Db.Teachers.Where(x=> x.Gender =='M' && x.Address == "Dang")
+// .Select(y=> y.name);
+.ToList(); //linq
+foreach(var teacher in teachers)
+{
+    Console.WriteLine($"Name:{teacher.Name} , Dob: {teacher.dob}");
+}
+
 
 
 
